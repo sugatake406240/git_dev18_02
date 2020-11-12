@@ -1,0 +1,113 @@
+/* ここから下に記載していく */
+@charset "utf-8";
+
+html{
+    font-size: 62.5%; /*16px→10px*/
+}
+
+body{
+    background-color: rgb(226, 217, 217);
+    color: #333333;
+    font-size: 1.6rem;
+    position: relative; /*中央ぞろえのための親要素指定 */
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* タイトル関連 */
+
+.title{
+    font-size: 42px;
+    background-color: rgba(213, 247, 26, 0.85);
+    color:#004eff;
+    font-weight: bold;
+}
+
+.title_wrapper {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0 4%;
+}
+
+.title_BackPicture{
+    margin: 0 auto;
+    background-image:url("../img/jyanken_title.png");
+    width: 370px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.title_position{
+    position: absolute;  /*要素を浮かす*/
+     /*relativeを指定した親要素を支点とした位置をすべて0に指定↓*/
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin: auto; /*上下左右中央に*/
+    width: 400px; /*widthの指定は必須*/
+    height: 50px; /*heightの指定は必須*/
+}
+
+
+
+/*  */
+
+
+
+.profile_wrapper{
+    width: 500px;
+    margin: auto;
+}
+
+.text_center{
+    text-align: center;
+
+}
+
+.flex{
+    display: flex;
+}
+
+.flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
+.sample{
+    width:120px; height:150px;
+    margin:5px; padding:10px; border:1px solid black;
+    background-color:lightgray;
+    text-align: center;
+}
+
+.result{
+    font-size: 32px;
+    color: brown;
+    font-weight: bold;
+
+}
+
+/* 　　　　　　 */
+/* hoverで拡大 */
+.ImgBox{
+    width: 280px;
+    height: 200px;
+    overflow: hidden;
+  }
+  .ImgBox-Img{
+    transition-duration: 0.3s;
+  }
+  .ImgBox-Img:hover{
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+  }

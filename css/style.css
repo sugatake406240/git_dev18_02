@@ -20,10 +20,22 @@ img{
 /* タイトル関連 */
 
 .title{
+    /* width: 400px; */
+    margin: auto;
+
+    /* 下絵の中央に文字を表示 　↓　*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    /* 下絵の中央に文字を表示 ↑　　*/
+
     font-size: 42px;
-    background-color: rgba(213, 247, 26, 0.85);
+    background-color: rgba(213, 247, 26, 0.75);
     color:#004eff;
     font-weight: bold;
+
+   
 }
 
 .title_wrapper {
@@ -32,29 +44,11 @@ img{
     padding: 0 4%;
 }
 
-.title_BackPicture{
-    margin: 0 auto;
-    background-image:url("../img/jyanken_title.png");
-    width: 370px;
-    height: 130px;
-    margin-bottom: 10px;
+.jyanken_back{
+    /* 下絵の位置を決定する 　↓　*/
+    position: relative;
+
 }
-
-.title_position{
-    position: absolute;  /*要素を浮かす*/
-     /*relativeを指定した親要素を支点とした位置をすべて0に指定↓*/
-
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    margin: auto; /*上下左右中央に*/
-    width: 400px; /*widthの指定は必須*/
-    height: 50px; /*heightの指定は必須*/
-}
-
-
 
 /*  */
 
